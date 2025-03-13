@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Koala To Do List</title>
+</head>
+<body background="koalajpeg.jpeg">
+    <h1>Koala To-Do List</h1>
+    <form method="post">
+        <label for="dato">Como te llamas?</label>
+        <input type="text" id="dato" name="dato" required>
+        <button type="submit">Enviar</button>
+    
+    </form>    
+    <ul>
+        <li>
+            Tarea 1
+            <button onclick="completarTarea(this)">Completar</button>
+        </li>
+        <li>
+            Tarea 2
+            <button onclick="completarTarea(this)">Completar</button>
+        </li>
+        <li>
+            Tarea 3
+            <button onclick="completarTarea(this)">Completar</button>
+        </li>
+    </ul>
+
+    <script>
+        function completarTarea(boton) {
+            boton.parentElement.style.textDecoration = "line-through";
+            boton.disabled = true;
+        }
+    </script>
+</body>
+</html>
