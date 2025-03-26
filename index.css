@@ -1,0 +1,19 @@
+body {
+    background-color: red; /* Ensure it's applying */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+    padding-left: 10px; /* Fixed padding */
+    border: 1px solid black; /* Fixed border */
+}
